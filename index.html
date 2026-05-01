@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebBand - Real-time Jam</title>
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; text-align: center; padding: 20px; }
+        .status { color: #00ff00; margin: 10px; }
+        button { padding: 15px 30px; font-size: 16px; cursor: pointer; border-radius: 8px; border: none; background: #6200ee; color: white; }
+        #link-display { background: #333; padding: 10px; border-radius: 5px; margin-top: 20px; word-break: break-all; }
+    </style>
+</head>
+<body>
+    <h1>🎸 WebBand Jam</h1>
+    <div id="status" class="status">Connecting to network...</div>
+    <button id="startBtn">Enable My Mic & Join Room</button>
+    
+    <div id="link-display">
+        <p>Share this link with your band:</p>
+        <code id="roomLink">Generating...</code>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
